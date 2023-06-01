@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
---Date        : Thu Jun  1 07:01:35 2023
+--Date        : Thu Jun  1 08:10:29 2023
 --Host        : mango running 64-bit major release  (build 9200)
 --Command     : generate_target uart_hello_world.bd
 --Design      : uart_hello_world
@@ -37,7 +37,7 @@ architecture STRUCTURE of uart_hello_world is
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of Input_Clk : signal is "xilinx.com:signal:clock:1.0 CLK.INPUT_CLK CLK";
   attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of Input_Clk : signal is "XIL_INTERFACENAME CLK.INPUT_CLK, CLK_DOMAIN uart_hello_world_Input_Clk, FREQ_HZ 100000000, PHASE 0.000";
+  attribute X_INTERFACE_PARAMETER of Input_Clk : signal is "XIL_INTERFACENAME CLK.INPUT_CLK, CLK_DOMAIN uart_hello_world_Input_Clk, FREQ_HZ 12000000, PHASE 0.000";
   attribute X_INTERFACE_INFO of Reset_Top : signal is "xilinx.com:signal:reset:1.0 RST.RESET_TOP RST";
   attribute X_INTERFACE_PARAMETER of Reset_Top : signal is "XIL_INTERFACENAME RST.RESET_TOP, POLARITY ACTIVE_HIGH";
 begin

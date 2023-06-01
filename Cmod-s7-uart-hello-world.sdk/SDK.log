@@ -1,0 +1,74 @@
+07:12:57 INFO  : Registering command handlers for SDK TCF services
+07:12:58 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\speqtral\XilinxVivado\Cmod-s7-uart-hello-world\Cmod-s7-uart-hello-world.sdk\temp_xsdb_launch_script.tcl
+07:13:00 INFO  : XSCT server has started successfully.
+07:13:00 INFO  : Successfully done setting XSCT server connection channel  
+07:13:00 INFO  : Successfully done setting SDK workspace  
+07:13:00 INFO  : Processing command line option -hwspec C:/Users/speqtral/XilinxVivado/Cmod-s7-uart-hello-world/Cmod-s7-uart-hello-world.sdk/uart_hello_world_wrapper.hdf.
+07:47:25 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1685576840341,  Project:1685574744271
+07:47:25 INFO  : Project uart_hello_world_wrapper_hw_platform_0's source hardware specification located at C:/Users/speqtral/XilinxVivado/Cmod-s7-uart-hello-world/Cmod-s7-uart-hello-world.sdk/uart_hello_world_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+07:47:29 INFO  : Copied contents of C:/Users/speqtral/XilinxVivado/Cmod-s7-uart-hello-world/Cmod-s7-uart-hello-world.sdk/uart_hello_world_wrapper.hdf into \uart_hello_world_wrapper_hw_platform_0\system.hdf.
+07:47:29 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+07:47:31 INFO  : 
+07:47:31 INFO  : Updating hardware inferred compiler options for Hello_World.
+07:47:32 INFO  : Clearing existing target manager status.
+07:47:32 INFO  : Closing and re-opening the MSS file of ther project Hello_World_bsp
+07:47:32 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+07:47:43 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+07:54:11 INFO  : Registering command handlers for SDK TCF services
+07:54:11 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\speqtral\XilinxVivado\Cmod-s7-uart-hello-world\Cmod-s7-uart-hello-world.sdk\temp_xsdb_launch_script.tcl
+07:54:13 INFO  : XSCT server has started successfully.
+07:54:13 INFO  : Successfully done setting XSCT server connection channel  
+07:54:13 INFO  : Successfully done setting SDK workspace  
+07:54:13 INFO  : Processing command line option -hwspec C:/Users/speqtral/XilinxVivado/Cmod-s7-uart-hello-world/Cmod-s7-uart-hello-world.sdk/uart_hello_world_wrapper.hdf.
+07:54:13 INFO  : Checking for hwspec changes in the project uart_hello_world_wrapper_hw_platform_0.
+07:54:14 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1685576990705,  Project:1685576840341
+07:54:14 INFO  : The hardware specification for project 'uart_hello_world_wrapper_hw_platform_0' is different from C:/Users/speqtral/XilinxVivado/Cmod-s7-uart-hello-world/Cmod-s7-uart-hello-world.sdk/uart_hello_world_wrapper.hdf.
+07:54:14 INFO  : Copied contents of C:/Users/speqtral/XilinxVivado/Cmod-s7-uart-hello-world/Cmod-s7-uart-hello-world.sdk/uart_hello_world_wrapper.hdf into \uart_hello_world_wrapper_hw_platform_0\system.hdf.
+07:54:14 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+07:54:16 INFO  : 
+07:54:17 INFO  : Updating hardware inferred compiler options for Hello_World.
+07:54:17 INFO  : Clearing existing target manager status.
+07:55:03 INFO  : CPU Number not found for processor microblaze_mcs_0_microblaze_I, defaulting to 0 
+07:55:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B5B999A" && level==0} -index 0' command is executed.
+07:55:03 INFO  : 'fpga -state' command is executed.
+07:55:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:55:03 INFO  : Bscan info not found for microblaze  microblaze_mcs_0_microblaze_I, defaulting to 2 
+07:55:03 INFO  : CPU Number not found for processor microblaze_mcs_0_microblaze_I, defaulting to 0 
+07:55:03 INFO  : Bscan info not found for microblaze  microblaze_mcs_0_microblaze_I, defaulting to 2 
+07:55:03 INFO  : CPU Number not found for processor microblaze_mcs_0_microblaze_I, defaulting to 0 
+07:55:03 INFO  : Bscan info not found for microblaze  microblaze_mcs_0_microblaze_I, defaulting to 2 
+07:55:03 INFO  : Jtag cable 'Digilent Cmod S7 210376B5B999A' is selected.
+07:55:03 INFO  : 'jtag frequency' command is executed.
+07:55:03 WARN  : 'microblaze_mcs_0_microblaze_I' frequency '12000000' is less than Jtag frequency '15000000'. Debugging will not work reliably
+07:55:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+07:55:15 ERROR : no targets found with "name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Cmod S7 210376B5B999A"". available targets:
+  1* xc7s25
+07:55:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Cmod S7 210376B5B999A"} -index 0
+----------------End of Script----------------
+
+08:10:51 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1685578247812,  Project:1685576990705
+08:10:51 INFO  : Project uart_hello_world_wrapper_hw_platform_0's source hardware specification located at C:/Users/speqtral/XilinxVivado/Cmod-s7-uart-hello-world/Cmod-s7-uart-hello-world.sdk/uart_hello_world_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+08:15:52 INFO  : Project uart_hello_world_wrapper_hw_platform_0's source hardware specification location will not be monitored anymore.
+08:16:07 INFO  : Registering command handlers for SDK TCF services
+08:16:07 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\speqtral\XilinxVivado\Cmod-s7-uart-hello-world\Cmod-s7-uart-hello-world.sdk\temp_xsdb_launch_script.tcl
+08:16:09 INFO  : XSCT server has started successfully.
+08:16:09 INFO  : Successfully done setting XSCT server connection channel  
+08:16:09 INFO  : Successfully done setting SDK workspace  
+08:16:09 INFO  : Processing command line option -hwspec C:/Users/speqtral/XilinxVivado/Cmod-s7-uart-hello-world/Cmod-s7-uart-hello-world.sdk/uart_hello_world_wrapper.hdf.
+08:27:25 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\speqtral\XilinxVivado\Cmod-s7-uart-hello-world\Cmod-s7-uart-hello-world.sdk\temp_xsdb_launch_script.tcl
+08:27:27 INFO  : XSCT server has started successfully.
+08:27:27 INFO  : Successfully done setting XSCT server connection channel  
+08:27:28 INFO  : Successfully done setting SDK workspace  
+08:27:29 INFO  : Registering command handlers for SDK TCF services
+08:27:30 INFO  : Processing command line option -hwspec C:/Users/speqtral/XilinxVivado/Cmod-s7-uart-hello-world/Cmod-s7-uart-hello-world.sdk/uart_wrapper.hdf.
+08:28:30 INFO  : Registering command handlers for SDK TCF services
+08:28:30 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\speqtral\XilinxVivado\Cmod-s7-uart-hello-world\Cmod-s7-uart-hello-world.sdk\temp_xsdb_launch_script.tcl
+08:28:32 INFO  : XSCT server has started successfully.
+08:28:33 INFO  : Successfully done setting XSCT server connection channel  
+08:28:33 INFO  : Successfully done setting SDK workspace  
+08:28:33 INFO  : Processing command line option -hwspec C:/Users/speqtral/XilinxVivado/Cmod-s7-uart-hello-world/Cmod-s7-uart-hello-world.sdk/uart_wrapper.hdf.

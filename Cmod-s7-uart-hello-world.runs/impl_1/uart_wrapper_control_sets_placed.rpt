@@ -1,0 +1,97 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Jun  1 08:25:37 2023
+| Host         : mango running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file uart_wrapper_control_sets_placed.rpt
+| Design       : uart_wrapper
+| Device       : xc7s25
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    27 |
+| Unused register locations in slices containing registers |    76 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            9 |
+|      6 |            1 |
+|      8 |            3 |
+|     10 |            3 |
+|     12 |            1 |
+|     14 |            1 |
+|    16+ |            9 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             164 |           38 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              76 |           19 |
+| Yes          | No                    | No                     |              74 |           25 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             282 |           53 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|     Clock Signal     |                                                                                  Enable Signal                                                                                  |                                                                    Set/Reset Signal                                                                   | Slice Load Count | Bel Load Count |
++----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  Input_Clk_IBUF_BUFG |                                                                                                                                                                                 | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.New_Carry_MUXCY/Using_FPGA.Native_0                        |                1 |              2 |
+|  Input_Clk_IBUF_BUFG |                                                                                                                                                                                 | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.Using_Breakable_Pipe.Take_Intr_MUXCY_3/Using_FPGA.Native_0 |                1 |              2 |
+|  Input_Clk_IBUF_BUFG |                                                                                                                                                                                 | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/MSR_Rst                                                               |                1 |              2 |
+|  Input_Clk_IBUF_BUFG |                                                                                                                                                                                 | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/exception_kind[0]                                                     |                1 |              2 |
+|  Input_Clk_IBUF_BUFG | uart_i/microblaze_mcs_0/U0/iomodule_0/U0/IOModule_Core_I1/Using_UART.No_Dynamic_BaudRate.UART_FIT_I/Implement_FIT.Using_SRL16s.SRL16s[1].Divide_I/One_SRL16.SRL16E_I/Clk_En_I_1 |                                                                                                                                                       |                1 |              2 |
+|  Input_Clk_IBUF_BUFG | uart_i/microblaze_mcs_0/U0/iomodule_0/U0/IOModule_Core_I1/Using_UART.No_Dynamic_BaudRate.UART_FIT_I/Implement_FIT.Using_SRL16s.SRL16s[2].Divide_I/en_16x_baud                   |                                                                                                                                                       |                1 |              2 |
+|  Input_Clk_IBUF_BUFG | uart_i/microblaze_mcs_0/U0/iomodule_0/U0/IOModule_Core_I1/Using_UART.No_Dynamic_BaudRate.UART_FIT_I/Implement_FIT.Using_SRL16s.SRL16s[2].Divide_I/en_16x_baud                   | uart_i/microblaze_mcs_0/U0/iomodule_0/U0/IOModule_Core_I1/Using_UART_TX.UART_TX_I1/TMR_No.FDRE_I/tx_Data_Enable                                       |                1 |              2 |
+|  Input_Clk_IBUF_BUFG | uart_i/microblaze_mcs_0/U0/iomodule_0/U0/IOModule_Core_I1/Using_UART.No_Dynamic_BaudRate.UART_FIT_I/Implement_FIT.Using_SRL16s.SRL16s[2].Divide_I/Out1                          |                                                                                                                                                       |                1 |              2 |
+|  Input_Clk_IBUF_BUFG | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/Using_FPGA.Native_0                                               | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/Unsigned_Op_reg                         |                1 |              2 |
+|  Input_Clk_IBUF_BUFG | uart_i/microblaze_mcs_0/U0/iomodule_0/U0/IOModule_Core_I1/Using_UART_TX.UART_TX_I1/TMR_No.FDRE_I/tx_Data_Enable                                                                 | uart_i/microblaze_mcs_0/U0/rst_0/U0/peripheral_reset[0]                                                                                               |                3 |              6 |
+|  Input_Clk_IBUF_BUFG |                                                                                                                                                                                 | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.MUXCY_JUMP_CARRY3/R_0                                      |                2 |              8 |
+|  Input_Clk_IBUF_BUFG |                                                                                                                                                                                 | uart_i/microblaze_mcs_0/U0/rst_0/U0/bus_struct_reset[0]                                                                                               |                2 |              8 |
+|  Input_Clk_IBUF_BUFG | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/E[0]                                                              |                                                                                                                                                       |                2 |              8 |
+|  Input_Clk_IBUF_BUFG |                                                                                                                                                                                 | uart_i/microblaze_mcs_0/U0/rst_0/U0/EXT_LPF/lpf_int                                                                                                   |                1 |             10 |
+|  Input_Clk_IBUF_BUFG |                                                                                                                                                                                 | uart_i/microblaze_mcs_0/U0/rst_0/U0/peripheral_reset[0]                                                                                               |                2 |             10 |
+|  Input_Clk_IBUF_BUFG | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/Using_FPGA.Native_0                                               | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/select_ALU_Carry_reg                    |                1 |             10 |
+|  Input_Clk_IBUF_BUFG | uart_i/microblaze_mcs_0/U0/rst_0/U0/SEQ/seq_cnt_en                                                                                                                              | uart_i/microblaze_mcs_0/U0/rst_0/U0/SEQ/SEQ_COUNTER/clear                                                                                             |                1 |             12 |
+|  Input_Clk_IBUF_BUFG | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/Using_FPGA.Native_0                                               | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.MUXCY_JUMP_CARRY3/R                                        |                3 |             14 |
+|  Input_Clk_IBUF_BUFG | uart_i/microblaze_mcs_0/U0/iomodule_0/U0/uart_tx_write                                                                                                                          | uart_i/microblaze_mcs_0/U0/rst_0/U0/peripheral_reset[0]                                                                                               |                2 |             16 |
+|  Input_Clk_IBUF_BUFG | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.MUXCY_JUMP_CARRY3/PC_Write                                                           | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/sync_reset                                                                               |                4 |             22 |
+|  Input_Clk_IBUF_BUFG |                                                                                                                                                                                 | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/sync_reset                                                                               |                8 |             32 |
+|  Input_Clk_IBUF_BUFG | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/PreFetch_Buffer_I/of_valid_FDR_I/E[0]                                                           | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/sync_reset                                                                               |                9 |             32 |
+|  Input_Clk_IBUF_BUFG | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/Using_FPGA.Native_0                                               |                                                                                                                                                       |               22 |             64 |
+|  Input_Clk_IBUF_BUFG | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.clean_iReady_MuxCY/IReady                                                            |                                                                                                                                                       |               11 |             86 |
+|  Input_Clk_IBUF_BUFG | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/Using_FPGA.Native_0                                               | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/sync_reset                                                                               |               28 |            166 |
+|  Input_Clk_IBUF_BUFG |                                                                                                                                                                                 |                                                                                                                                                       |               42 |            172 |
+|  Input_Clk_IBUF_BUFG | uart_i/microblaze_mcs_0/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Reg_Write                                                                                       |                                                                                                                                                       |               32 |            256 |
++----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+
